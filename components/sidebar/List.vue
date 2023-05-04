@@ -132,63 +132,6 @@ const menus = computed(() => [
         icon: 'ci:dummy-circle-small'
       }
     ]
-  },
-  {
-    title: 'Sale',
-    to: '/sale',
-    icon: 'ph:currency-circle-dollar',
-    items: [
-      {
-        title: 'General',
-        to: '/general-ledger/general',
-        icon: 'ci:dummy-circle-small'
-      },
-      {
-        title: 'Ledger',
-        to: '/general-ledger/ledger',
-        icon: 'ci:dummy-circle-small'
-      }
-    ]
-  },
-  {
-    title: 'Purchasing',
-    to: '/learnings',
-    icon: 'ic:outline-local-grocery-store'
-  },
-  {
-    title: 'Produce & Service',
-    to: '/learnings',
-    icon: 'fluent-mdl2:product-variant'
-  },
-  {
-    title: 'Vender/Supplier',
-    to: '/learnings',
-    icon: 'mdi:truck-minus-outline'
-  },
-  {
-    title: 'Customer',
-    to: '/learnings',
-    icon: 'mdi:people-group'
-  },
-  {
-    title: 'Account Receivables',
-    to: '/learnings',
-    icon: 'material-symbols:dashboard-outline'
-  },
-  {
-    title: 'Account Payables',
-    to: '/learnings',
-    icon: 'mdi:bank-circle-outline'
-  },
-  {
-    title: 'Report',
-    to: '/learnings',
-    icon: 'mdi:report-box'
-  },
-  {
-    title: 'Setting',
-    to: '/learnings',
-    icon: 'ant-design:setting-outlined'
   }
 ])
 </script>
