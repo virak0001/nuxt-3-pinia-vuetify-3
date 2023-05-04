@@ -4,15 +4,6 @@
         <v-list-item-content>
           <v-toolbar-title class="d-flex justify-center font-weight-bold">Hospital care system</v-toolbar-title>
         </v-list-item-content>
-        <v-text-field
-          label="Search"
-          prepend-inner-icon="mdi-magnify"
-          density="compact"
-          variant="outlined"
-          single-line
-          hide-details
-          class="mt-5"
-        />
       </v-list-item>
       <v-divider />
   
@@ -50,23 +41,6 @@
       to: '/dashboard',
       divider: '',
       canView: true,
-    },
-    {
-      icon: 'mdi-list-box-outline',
-      title: 'User management',
-      to: '/user-management',
-      divider: '',
-      canView: true,
-      child: true,
-      items: [
-        {
-          icon: 'mdi-circle-medium',
-          title: 'Consultant',
-          to: '/user-management/consultant',
-          divider: '',
-          canView: true,
-        },
-      ],
     },
   ])
   </script>

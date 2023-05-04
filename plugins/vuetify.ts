@@ -1,20 +1,29 @@
+import "vuetify/styles";
 import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+import { fa } from "vuetify/iconsets/fa";
+import { VDataTable } from 'vuetify/labs/VDataTable'
+import { aliases, mdi } from "vuetify/lib/iconsets/mdi";
+import "@mdi/font/css/materialdesignicons.css";
+import "@fortawesome/fontawesome-free/css/all.css"; 
 
-import { mdi, aliases as allAliases } from 'vuetify/iconsets/mdi-svg';
-const aliases = {
-    /* Only used icon aliases here */
-    menu: allAliases.menu,
-    close: allAliases.close,
-    info: allAliases.info,
-};
 export default defineNuxtPlugin(nuxtApp => {
-    const vuetify = createVuetify({
-        // your config will come here
-        icons: {
-            defaultSet: 'mdi',
-            aliases,
-            sets: { mdi }
-        }
-    })
-    nuxtApp.vueApp.use(vuetify)
+  const vuetify = createVuetify({
+    components: {
+      ...components,
+      VDataTable
+    },
+    directives,
+      icons: {
+        defaultSet: "mdi",
+        aliases,
+        sets: {
+          mdi,
+          fa,
+        },
+      },
+  })
+
+  nuxtApp.vueApp.use(vuetify)
 })
