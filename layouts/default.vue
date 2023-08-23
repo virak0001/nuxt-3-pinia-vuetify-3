@@ -1,9 +1,3 @@
-<!-- <template>
-  <div class="flex">
-    <Sidebar />
-    <NuxtPage />
-  </div>
-</template> -->
 <template>
   <Html>
     <Body>
@@ -27,7 +21,7 @@
           <v-spacer />
           <v-menu>
             <template #activator="{ props }">
-              <div class="pr-32px cursor-pointer" v-bind="props">example@gmail.com</div>
+              <div class="pr-32px cursor-pointer" v-bind="props">demo@gmail.com</div>
             </template>
             <v-list class="cursor-pointer w-140px">
                 Logout

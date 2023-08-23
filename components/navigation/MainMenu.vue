@@ -38,7 +38,7 @@
     {
       icon: 'mdi-view-dashboard-outline',
       title: 'Home',
-      to: '/dashboard',
+      to: '/',
       divider: '',
       canView: true,
     },

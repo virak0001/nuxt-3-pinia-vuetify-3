@@ -20,7 +20,7 @@ export function useApi (endpoint: string) {
     payload: any,
     config?: {}
   ) => {
-    const url = `${endpoint}${route ? '/' + route : ''}`
+    const url = `${endpoint}${route ? '' + route : ''}`
     if (method === 'get' || method === 'delete') { return validationWrapper(async () => await fetch(url, method, config, payload)) } else { return validationWrapper(async () => await fetch(url, method, config, payload)) }
   }
 
